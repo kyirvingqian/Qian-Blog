@@ -1,4 +1,4 @@
-baseURL = 'https://kyirvingqian.github.io/Qian-Blog/'
+baseURL = 'https://blog.qianjy.net/'
 languageCode = 'zh-cn'
 title = '还没想好叫什么'
 theme = 'paper'

@@ -1,7 +1,7 @@
 ---
 title: "Ready"
 date: 2022-12-13T12:58:30+08:00
-draft: true
+draft: false
 ---
 
 # 写在最前面的

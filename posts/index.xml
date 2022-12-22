@@ -5,8 +5,9 @@ leetcode原题要求：
 你可以按任意顺序返回答案。
 进阶：你可以想出一个时间复杂度小于$O(N^2)$的算法吗？
 方法1：枚举
-class Solution { public int[] twoSum(int[] nums, int target) { int n=nums.length; for(int i = 0; i &amp;lt; n - 1; i++){ for(int j = i + 1; j &amp;lt; n; j++){ if(nums[i] + nums[j] == target){ return new int[] {i, j}; } } } return new int[] {0}; } } 上述算法运用了数组的基本知识，时间复杂度为$O(N^2)$，接下来考虑一种时间复杂度更小的方法。
-方法2：哈希表</description></item><item><title>Ready</title><link>https://blog.qianjy.net/posts/ready/</link><pubDate>Tue, 13 Dec 2022 12:58:30 +0800</pubDate><guid>https://blog.qianjy.net/posts/ready/</guid><description>写在最前面的 I write this article since I&amp;rsquo;m ready to start a blog.
+class Solution { public int[] twoSum(int[] nums, int target) { int n=nums.length; for(int i = 0; i &amp;lt; n - 1; ++i){ //使用++i而非i++是为了减少了内存空间使用和运行时间 for(int j = i + 1; j &amp;lt; n; ++j){ if(nums[i] + nums[j] == target){ return new int[] {i, j}; } } } return new int[0]; } } 上述算法运用了数组的基本知识，时间复杂度为$O(N^2)$，接下来考虑一种时间复杂度更小的方法。
+方法2：哈希表
+class Solution{ public int[] twoSum(int[] nums, int target){ Map&amp;lt;Integer, Integer&amp;gt; hashtable = new HashMap&amp;lt;Integer, Integer&amp;gt;(); for (int i = 0; i &amp;lt; nums.</description></item><item><title>Ready</title><link>https://blog.qianjy.net/posts/ready/</link><pubDate>Tue, 13 Dec 2022 12:58:30 +0800</pubDate><guid>https://blog.qianjy.net/posts/ready/</guid><description>写在最前面的 I write this article since I&amp;rsquo;m ready to start a blog.
 2012/12/13
 这里显示的是斜体
 这里显示的倾斜体
